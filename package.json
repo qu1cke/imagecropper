@@ -9,7 +9,8 @@
     "build-no-errors": "./node_modules/.bin/tsc --noEmitOnError false && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "types:supabase": "npx supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/types/supabase.ts"
+    "types:supabase": "npx supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/types/supabase.ts",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
